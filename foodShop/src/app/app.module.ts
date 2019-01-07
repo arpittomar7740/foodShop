@@ -9,12 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list'
+import 'hammerjs';
+import { DishDetailsComponent } from './components/dish-details/dish-details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    DishDetailsComponent
   ],
   imports: [
     BrowserModule,

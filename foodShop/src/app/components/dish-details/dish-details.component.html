@@ -1,0 +1,14 @@
+<div class="card-footer" *ngIf="dish.show !== false" [ngClass]="{'view-comment-box': dish.show}">
+  <div *ngFor="let comment of dish.comments">
+      <div class="media">
+          <img src="assets/img/user.png" class="mr-2" style="height: 35px; width: 40px">
+          <div class="media-body">
+            <h6 class="mt-0">{{comment.author}}</h6>
+            <p style="font-size: 12px; color:#21252991">{{comment.comment}}</p>
+            <small class="float-left" style="color: #6b8096">{{comment.date | date}}</small>
+            <small class="float-right" style="color: #6b8096">Rating: {{comment.rating}}/5</small>
+          </div> 
+        </div>
+        <hr>
+  </div>
+</div>

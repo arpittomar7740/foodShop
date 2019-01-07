@@ -1,0 +1,23 @@
+<div class="container-fluid p-5">
+  <div class="row">
+    <h3 style="color: black"><span style="border-bottom: 2px solid grey">Menu</span></h3>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-3" *ngFor="let dish of dishes">
+        <div class="card shadow" style="height: 100%">
+            <img src="{{dish.image}}" class="card-img-top" style="height: 300px">
+            <div class="card-body">
+              <div class="dish-info" style="height: 150px">
+                  <h5 class="card-title">{{dish.name}}</h5>
+                  <p class="card-text">{{dish.description}}</p>
+              </div>
+              <small class="float-right" [hidden]="!!dish.show" (click)="onSelect(dish, true)">View Comments...</small>
+              <small class="float-right" [hidden]="!dish.show" (click)="onSelect(dish, false)">Close Comments...</small>
+            </div>
+              <app-dish-details [dishObject]="dishObject" [dish]="dish"></app-dish-details>
+          </div>
+        </div>
+      </div>
+    </div>
+    
