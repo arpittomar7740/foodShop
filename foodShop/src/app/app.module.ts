@@ -11,13 +11,17 @@ import {MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list'
 import 'hammerjs';
 import { DishDetailsComponent } from './components/dish-details/dish-details.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    DishDetailsComponent
+    DishDetailsComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
