@@ -11,6 +11,6 @@ export class DishService {
   constructor() { }
 
   public getDishes(): Dish[] {
-    return DISHES
+    return DISHES;
   }
 }
