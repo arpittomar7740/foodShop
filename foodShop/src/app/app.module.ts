@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuComponent } from './components/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule } from '@angular/material/button';
@@ -14,15 +13,17 @@ import { MatDialogModule } from '@angular/material';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginDialogComponent } from './components/login-dialog/login-dialog.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HTTP_INTERCEPTORS} from '@angular/common/http';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
     DishDetailsComponent,
     HeaderComponent,
-    LoginDialogComponent
+    LoginDialogComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,
@@ -36,8 +37,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ReactiveFormsModule,
     FormsModule
   ],
-  entryComponents: [LoginDialogComponent],
   providers: [],
+  entryComponents: [LoginDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
