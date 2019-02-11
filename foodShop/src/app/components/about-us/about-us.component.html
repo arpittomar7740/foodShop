@@ -1,1 +1,47 @@
 <h4><span class="heading">History</span></h4>
+<div class=" row p-3">
+    <div class="col-md-8 p-5">
+        <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+        <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>      
+        <div class="shadow-sm p-3 mt-5 mb-5 bg-white rounded border-left border-info">
+            <h5>You better cut the pizza in four pieces because
+                    I'm not hungry enough to eat six.</h5>
+                    <small> -- Yogi Berra,
+                            The Wit and Wisdom of Yogi Berra,
+                              P. Pepe, Diversion Books, 2014</small>
+        </div>  
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow">
+            <div class="card-header">
+                <h4><span class="heading">Facts At a Glance</span></h4>
+            </div>
+            <div class="card-body">
+                <dl>
+                    <dt>Started</dt>
+                    <dd><p>3 Feb. 2013</p></dd>
+                    <dt>Major Stake Holder</dt>
+                    <dd><p>HK Fine Foods Inc.</p></dd> 
+                    <dt>Last Year's Turnover</dt>
+                         <dd><p>$1,250,375</p></dd>
+                   <dt>Employees</dt>
+                       <dd><p>40</p></dd>
+                   </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3 ><span class="heading">Corporate Leadership</span></h3>
+<div class="row p-3">
+    <div class="col-md-12">
+        <div class="shadow-sm p-3 mt-5 mb-5 bg-white rounded border-left border-info" *ngFor="let leader of leaders">
+            <h4><img src="../../../assets/img/logo.png" class="rounded-circle" width="30px" height="30px"/> {{leader.name}}</h4>
+            <p>{{leader.designation}}</p>
+            <p>{{leader.description}}</p>
+        </div>
+    </div>
+</div>
+
+
+

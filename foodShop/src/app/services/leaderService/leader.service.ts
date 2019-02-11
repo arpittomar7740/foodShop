@@ -11,4 +11,12 @@ export class LeaderService {
   public getLeader(): LeaderData[] {
     return LEADERS;
   }
+
+  public getFeaturedLeader(): LeaderData[] {
+    return LEADERS.filter((leader) => {
+      if(leader.featured === true){
+        return leader;
+      }
+    });
+  }
 }

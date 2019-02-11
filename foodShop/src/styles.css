@@ -29,13 +29,25 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 
   .active-link{
-    color: #019285 !important;
-    border-bottom: 2px solid #019285 !important;
+    border-bottom: 2px solid #fff !important;
   }
 
   .heading{
-    color: #2da5bb;
-    border-bottom: 2px solid #2da5bb;
+    color: #c6496d;
+    border-bottom: 2px solid #c6496d;
     /*crimson*/
   }
+
+  p {
+    color: #648caf;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  dt{
+    color: #c6496d !important;
+  }
+
+  /* h1, h2, h3, h4, h5, h6 {
+    color: 
+  } */
 

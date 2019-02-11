@@ -20,6 +20,14 @@
         </div>
       </div>
 
+      <div class="row mt-4">
+          <div class="shadow-sm p-3 mt-5 mb-5 bg-white rounded border-left border-info" *ngFor="let featuredLeader of featuredLeaders">
+              <h4><img src="../../../assets/img/logo.png" class="rounded-circle" width="30px" height="30px"/> {{featuredLeader.name}}</h4>
+              <p>{{featuredLeader.designation}}</p>
+              <p>{{featuredLeader.description}}</p>
+          </div>
+      </div>
+
 
 
 
