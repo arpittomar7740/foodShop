@@ -15,6 +15,7 @@ import { LoginDialogComponent } from './components/login-dialog/login-dialog.com
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import { ContactComponent } from './components/contact/contact.component';
+import { FeedbackComponent } from './components/feedback/feedback.component';
 
 
 
@@ -25,7 +26,8 @@ import { ContactComponent } from './components/contact/contact.component';
     HeaderComponent,
     LoginDialogComponent,
     routingComponents,
-    ContactComponent
+    ContactComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
