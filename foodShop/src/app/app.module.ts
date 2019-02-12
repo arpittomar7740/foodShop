@@ -14,6 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginDialogComponent } from './components/login-dialog/login-dialog.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS} from '@angular/common/http';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 
@@ -23,7 +24,8 @@ import {HTTP_INTERCEPTORS} from '@angular/common/http';
     DishDetailsComponent,
     HeaderComponent,
     LoginDialogComponent,
-    routingComponents
+    routingComponents,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
