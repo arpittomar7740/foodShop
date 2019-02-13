@@ -13,9 +13,10 @@ import { MatDialogModule } from '@angular/material';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginDialogComponent } from './components/login-dialog/login-dialog.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {HTTP_INTERCEPTORS} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { ContactComponent } from './components/contact/contact.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
+import { baseUrl } from './shared/baseUrl';
 
 
 
@@ -33,6 +34,7 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatMenuModule,
     MatButtonModule,
     MatListModule,

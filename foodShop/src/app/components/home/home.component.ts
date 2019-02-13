@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { DishService } from 'src/app/services/dishService/dish.service';
+import { Dish } from 'src/app/shared/dish';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  dishes: Dish[];
+  featuredDishes: Dish;
+  constructor(private DishService: DishService) { }
 
   ngOnInit() {
+    this.DishService.getFeaturedDish()
+    .subscribe((resp) =>{
+      this.featuredDishes = resp;
+      console.log(this.featuredDishes)
+    })
+    
+    this.DishService.getDishesFromDatabase()
+    .subscribe((resp) => {
+      this.dishes = resp;
+    })
   }
 
 }
